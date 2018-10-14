@@ -16,12 +16,11 @@ class Genre
   end 
   
   def songs 
-    sort = Song.all.select {|song_hash| song_hash.genre.name == self.name}
-    binding.pry
+    sort = Song.all.select {|song_hash| song_hash.genre == self}
   end 
   
-  def artist 
-    
-  end 
+  def artists
+    self.songs.map(&:artist)
+  end
   
 end 

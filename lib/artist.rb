@@ -20,12 +20,11 @@ class Artist
   end 
   
   def songs 
-    Song.all.select {|song_hash| song_hash.artist.name == self.name}
+    Song.all.select {|song_hash| song_hash.artist == self}
   end 
   
   def genres
-    self.songs
-    # binding.pry
+    self.songs.map(&:genre)
   end 
     
   
