@@ -11,7 +11,8 @@ class Patient
   end 
   
   def initialize(name)
-    @name 
+    @name = name 
+    self.class.all << self
   end 
   
   def new_appointment(doctor, date)
