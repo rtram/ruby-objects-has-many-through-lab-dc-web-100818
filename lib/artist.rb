@@ -24,7 +24,7 @@ class Artist
   end 
   
   def genres
-    var = songs.map(&:genre)
+    self.songs.map(&:genre)
   end 
     
   
