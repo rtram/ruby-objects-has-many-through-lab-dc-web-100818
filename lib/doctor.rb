@@ -20,6 +20,7 @@ class Doctor
   end 
   
   def appointments
+    Appointment.all.map {||}
     
   end 
   
