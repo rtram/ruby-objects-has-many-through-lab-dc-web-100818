@@ -19,5 +19,9 @@ class Doctor
     # binding.pry
   end 
   
+  def appointments
+    
+  end 
+  
   
 end 
