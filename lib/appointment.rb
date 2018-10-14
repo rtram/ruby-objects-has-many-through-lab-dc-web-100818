@@ -2,6 +2,7 @@
 
 class Appointment
   
+  @all = []
   
   def initialize()
     
