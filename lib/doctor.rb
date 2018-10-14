@@ -21,7 +21,7 @@ class Doctor
   end 
   
   def appointments
-    doctors_appointments = Appointment.all.map {|appointment| appointment.doctor == self}
+    doctors_appointments = Appointment.all.select {|appointment| appointment.doctor == self}
     binding.pry
   end 
   
