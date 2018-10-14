@@ -20,7 +20,7 @@ class Genre
   end 
   
   def artists
-    self.songs(:&artist)
+    self.songs(&:artist)
     
   end
   
