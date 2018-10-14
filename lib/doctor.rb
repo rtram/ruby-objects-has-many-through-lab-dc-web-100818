@@ -21,8 +21,7 @@ class Doctor
   end 
   
   def appointments
-    doctors_appointments = Appointment.all.select {|appointment| appointment.doctor == self}
-    binding.pry
+    Appointment.all.select {|appointment| appointment.doctor == self}
   end 
   
   
